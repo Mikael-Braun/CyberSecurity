@@ -6,7 +6,7 @@ This repository contains my writeups from various challenge websites.
 
   -HackThisSite (Basic Missions, Realistic Missions)
 
-  -TryHackMe (various rooms)
+  -PicoCTF
 
   -HackTheBox (resolved machines)
 
