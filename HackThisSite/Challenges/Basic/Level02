@@ -1,44 +1,44 @@
 Basic - Level 02
 
 
-##Objective
+## Objective
 Complete the challenge by submitting the correct value to pass the level.
 
 
-##Context
+## Context
 "This level is designed to teach you about form handling and server-side validation. The page expects a password to compare with a server-side file, but in this level, the file is missing, so the check always passes."
 
 
-##Difficulty
+## Difficulty
 Easy
 
 
-##Tools used
+## Tools used
 Web browser
 DevTools (Ctrl + Shift + I / Inspect Element)
 Network tab 
 
 
-##Solution
+## Solution
 1.Inspect the form using Elements or View Source to see the input fields.
 2.Notice any hidden fields or form parameters that might be used by the server.
 3.Submit the form — any value will work because the script compares it to a missing file.
 4.Observe the server response confirming that you passed the level.
 
 
-##Common mistakes
+## Common mistakes
 - Overthinking the level and trying to find a password that doesn’t exist.
 - Not inspecting the form or scripts to understand how the validation works.
 - Assuming all levels require a real password.
 
 
-##Visual
+## Visual
 <!-- Open DevTools → Elements to see form input. Submit the form; the response shows success even without the file. -->
 
 
-##What I learned
+## What I learned
 Some challenges are designed to teach logic and observation, not brute force. By inspecting the form and understanding the script, you can see that any input is accepted. This reinforces the idea that learning the underlying mechanisms is more important than guessing values.
 
 
-##Useful links
+## Useful links
 https://developer.chrome.com/docs/devtools/network/?utm_source=chatgpt.com
