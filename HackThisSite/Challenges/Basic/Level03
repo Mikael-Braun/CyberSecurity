@@ -1,1 +1,43 @@
+#Basic - Level 03
 
+
+##Objective
+Find the password hidden in a file.
+
+
+##Context
+"This time Network Security Sam remembered to upload the password file, but there were deeper problems than that."
+This level teaches you how to discover hidden files referenced by the HTML.
+
+
+##Difficulty
+Easy
+
+
+##Tools used
+Web browser 
+DevTools (Ctrl + Shift + I / Inspect Element)
+
+
+##Solution
+1.Inspect HTML source.
+2.Look for <input type="hidden"> or hints about a file.
+3.Navigate directly to the file URL in the browser(.../missions/basic/3/password.php)
+4.Copy the password from the file and submit.
+
+
+##Common mistakes
+- Ignoring hidden inputs.
+- Trying random guesses instead of inspecting the source.
+
+
+##Visual
+<!-- Hidden input points to password file; open it to see password. -->
+
+
+##What I learned
+Hidden references in HTML can guide you to files not visibly linked.
+
+
+##Useful links
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden?utm_source=chatgpt.com
