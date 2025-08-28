@@ -1,1 +1,48 @@
 
+# Basic - Level 06
+
+
+## Objective  
+Retrieve the password sent to an email.
+
+
+## Context  
+"Network Security Sam has encrypted his password. The encryption system is publically available and can be accessed with this form" The level uses a simple cipher to encode passwords. Understanding the pattern allows decryption.
+
+
+## Difficulty  
+medium
+
+
+## Tools used  
+Paper and pen
+
+
+## Solution  
+1.Observe how input text is transformed in the cipher box.
+2.Test simple patterns (aaaaa, 12345, abcabc) to understand how characters shift.
+3.Deduce the algorithm by analyzing patterns.
+4.Reverse the cipher to decode the given string and retrieve the password.
+
+
+## Common mistakes  
+- Ignoring patterns or assuming a complex algorithm.
+- Not testing simple inputs.
+
+
+## Visual  
+<!-- Cipher box changes letters in a predictable pattern. each place of a number is change by the next number acording to the patern
+eg: 12345 ->> 13579   -->
+
+
+## What I learned  
+Basic ciphers teach logic and pattern recognition.
+
+
+## Useful links  
+- https://www.geeksforgeeks.org/simple-substitution-cipher/?utm_source=chatgpt.com
+
+
+
+
+

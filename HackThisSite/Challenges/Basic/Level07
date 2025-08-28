@@ -1,1 +1,43 @@
 
+# Basic - Level 07
+
+
+## Objective  
+Use command injection to list a file containing the password.
+
+
+## Context  
+"This time Network Security sam has saved the unencrypted level7 password in an obscurely named file saved in this very directory. In other unrelated news, Sam has set up a script that returns the output from the UNIX cal command. Here is the script:" This level introduces basic command injection by sending input to a server command.
+
+
+## Difficulty  
+medium
+
+
+## Tools used  
+Web browser 
+DevTools(Inspect Element / View Source)
+
+
+## Solution  
+1.Identify the input field that reaches a system command.
+2.Use a safe command separator (e.g., ;) to execute harmless commands like ls.
+3.Locate the file containing the password.
+4.Open that file via URL to obtain the password.
+
+
+## Common mistakes  
+- Trying dangerous commands.
+- Ignoring how the input is passed to the server command.
+
+
+## Visual  
+<!-- Input allows command injection; `ls` lists files including password file. password: 5e3dbf10 -->
+
+
+## What I learned  
+Command injection is powerful but dangerous; practice only in controlled environments.
+
+
+## Useful links  
+- https://owasp.org/www-community/attacks/Command_Injection?utm_source=chatgpt.com
