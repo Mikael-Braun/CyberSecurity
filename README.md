@@ -5,11 +5,12 @@ This repository contains my writeups from various challenge websites.
 
   -OverTheWire (Bandit, Narnia, etc.)
   
-  -HackThisSite (Basic Missions, Realistic Missions
+  -HackThisSite (Basic Missions, Realistic Missions)
   
-  -PicoCTF
+  -PicoCTF (CTFs)
   
   -HackTheBox (resolved machines)
   
+  -Crackmes (binary analysis)
 
 Each folder contains writeups organized by levels or missions.
