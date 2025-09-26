@@ -20,7 +20,6 @@
 ## ⚙️ Prerequisites
 - Windows VM (recommended) or Wine for running the exe safely.  
 - Ghidra (CodeBrowser / Decompiler).  
-- Optional: `strings`, `HxD` / `xxd`, `x64dbg`, `python3`.
 
 
 
@@ -31,6 +30,35 @@
 2. Filter in the Symbol Tree for a "main" function
 3. In the Decompile window you can see the main function in C
 4. Analise the main function code ,solution underneath
+---
+## 📜 Code
+```c
+int __cdecl main(int _Argc,char **_Argv,char **_Env)
+
+{
+  undefined8 local_16;
+  undefined2 local_e;
+  int local_c;
+  
+  __main();
+  local_c = 0;
+  local_16 = 0;
+  local_e = 0;
+  __mingw_printf("hello there and welcome to my very first crack me this is designed \n");
+  __mingw_printf("to be as simple as possible also you only have one try now what is the password ")
+  ;
+  __mingw_scanf("%d",&local_c);
+  if (local_c == 1504) {
+    __mingw_printf("correct");
+    __mingw_scanf("%s",&local_16);
+  }
+  else {
+    __mingw_printf("wrong try again");
+    __mingw_scanf("%s",&local_16);
+  }
+  return 0;
+}
+```
 <details>
   <summary>Solution (steps)</summary>
 

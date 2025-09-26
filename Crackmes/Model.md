@@ -6,8 +6,8 @@
 - **Uploaded:** 
 - **Difficulty:** 
 - **Quality:**
-- **File:** ``
-- **Size:** ``
+- **File:** 
+- **Size:** 
 
 
 ---
@@ -16,8 +16,10 @@
 - Very simple Windows x86-64 crackme written in C/C++. 
 - Goal: find the password of the executable analizing code
 
-
-
+---
+## ⚙️ Prerequisites
+- Windows VM (recommended) or Wine for running the exe safely.  
+- Ghidra (CodeBrowser / Decompiler).  
 
 ---
 
