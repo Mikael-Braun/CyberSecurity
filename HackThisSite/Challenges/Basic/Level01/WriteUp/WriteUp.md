@@ -44,7 +44,7 @@ Find the password for the next level.
 4. Locate the comment:
 
 
-5. The password is **`265efd1f`** — submit it to proceed to the next level.
+5. The password is **`265efd1f`** submit it to proceed to the next level.
 ```html
 <!-- the first few levels are extremely easy: password is 265efd1f -->
 ```
@@ -60,7 +60,8 @@ Find the password for the next level.
 ---
 
 ## ✅ What I learned (notes)
-Inspecting the source code of a webpage is a simple but powerful skill that helps uncover hidden information. HTML comments and leftover debug text are common places for trivial hints in early/challenge levels.
+- Inspecting the source code of a webpage is a simple but powerful skill that helps uncover hidden information. 
+- HTML comments and leftover debug text are common places for trivial hints in early challenges.
 
 ---
 
