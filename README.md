@@ -11,6 +11,6 @@ This repository contains my writeups from various challenge websites.
   
   -HackTheBox (resolved machines)
   
-  -Crackmes (binary analysis)
+  -Crackmes (code analysis)
 
 Each folder contains writeups organized by levels or missions.
