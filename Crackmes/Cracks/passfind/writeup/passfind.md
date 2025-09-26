@@ -16,6 +16,11 @@
 - Very simple Windows x86-64 crackme written in C/C++. 
 - Goal: find the password of the executable analizing code
 
+---
+## ⚙️ Prerequisites
+- Windows VM (recommended) or Wine for running the exe safely.  
+- Ghidra (CodeBrowser / Decompiler).  
+- Optional: `strings`, `HxD` / `xxd`, `x64dbg`, `python3`.
 
 
 
@@ -30,9 +35,10 @@
   <summary>Solution (steps)</summary>
 
 5. `_mingw_printf("correct");` is what we want to achieve
-6. `if (local_c == 0x5e0)` — it compares the variable to the password
-7. The password is `0x5e0` (1504 in decimal)
-8. Execute the program and enter `1504`
+6. `if (local_c == 0x5e0)` it compares the variable to the password that we have to enter
+7. `local_c` is the variable that stores the input
+8. The password is `0x5e0` (1504 in decimal)
+9. Execute the program and enter `1504`
 
 </details>
 
