@@ -14,3 +14,5 @@ This repository contains my writeups from various challenge websites.
   -Crackmes (code analysis)
 
 Each folder contains writeups organized by levels or missions.
+
+The folder BOOKS contains scripts that i learned by reading a book
