@@ -1,4 +1,4 @@
-# 🔥 Hack — Writeups & Learning Lab
+# 🔥 Ethical Hacking Writeups & Learning Lab
 
 > A curated collection of writeups, scripts and notes about offensive security, CTFs and reverse engineering.  
 > Focused on reproducibility, clear documentation and responsible learning.
@@ -11,7 +11,8 @@
 - [Included Platforms](#included-platforms)  
 - [Repository Structure](#repository-structure)    
 - [Ethics & Legal Notice](#ethics--legal-notice)  
-- [Security Recommendations](#security-recommendations)    
+- [Security Recommendations](#security-recommendations)
+- [Projects By area ](#Projects-By-area)
 - [License](#license)  
 
 
@@ -46,6 +47,26 @@ Each platform folder should include:
 - writeups in `.md` format or notes
 - `scripts/` for exploits or helper utilities 
 - optional `screenshots/` or `captures/` for images
+
+---
+
+## Projects By area
+
+### Reverse Engineering & Exploit Development
+- CrackMe challenges: [Crackmes folder](./Crackmes)  
+- picoCTF binary challenges: [picoCTF folder](./PicoCTF)
+
+### Web Application Pentesting
+- HackTheBox web labs: [HackTheBox folder](./HackTheBox)  
+- picoCTF web challenges: [picoCTF folder](./PicoCTF)  
+
+### Network & Cloud Security
+- HackTheBox network & recon labs: [HackTheBox folder](./HackTheBox)  
+- AWS / Cloud labs (learning modules): [folder link](./HTBCloudLabs)  
+
+### Hardware & IoT Security
+- Flipper Zero experiments: [Flipper folder](./Flipper)  
+- Raspberry Pi lab projects: [RaspberryPi folder](./RaspberryPi)
 
 ---
 ## Ethics & Legal Notice
