@@ -10,9 +10,9 @@
 - [Overview](#overview)  
 - [Included Platforms](#included-platforms)  
 - [Repository Structure](#repository-structure)    
+- [Projects By area ](#Projects-By-area)
 - [Ethics & Legal Notice](#ethics--legal-notice)  
 - [Security Recommendations](#security-recommendations)
-- [Projects By area ](#Projects-By-area)
 - [License](#license)  
 
 
@@ -53,15 +53,15 @@ Each platform folder should include:
 ## Projects By area
 
 ### Reverse Engineering & Exploit Development
-- CrackMe challenges: [Crackmes folder](./Crackmes)  
-- picoCTF binary challenges: [picoCTF folder](./PicoCTF)
+- CrackMe challenges: [Crackmes folder](./Crackmes\Binary Analysis)  
+- picoCTF binary challenges: [picoCTF](./PicoCTF/Cryptography)
 
 ### Web Application Pentesting
 - HackTheBox web labs: [HackTheBox folder](./HackTheBox)  
-- picoCTF web challenges: [picoCTF folder](./PicoCTF)  
+- picoCTF web challenges: [picoCTF folder](./PicoCTF/WebExploitation)  
 
-### Network & Cloud Security
-- HackTheBox network & recon labs: [HackTheBox folder](./HackTheBox)  
+### Cloud Security
+ 
 - AWS / Cloud labs (learning modules): [folder link](./HTBCloudLabs)  
 
 ### Hardware & IoT Security
