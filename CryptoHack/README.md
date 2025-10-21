@@ -1,6 +1,8 @@
 # picoCTF Cybersecurity CTF
 
-**Website:** https://picoctf.org — a free, beginner-focused cybersecurity Capture The Flag (CTF) platform and learning environment created by Carnegie Mellon University for students and newcomers to computer security.
+
+
+**Website:** https://picoctf.org a free, beginner-focused cybersecurity Capture The Flag (CTF) platform and learning environment created by Carnegie Mellon University for students and newcomers to computer security.
 
 > ⚠️ **Legal & Ethical Notice**  
 > picoCTF is an educational competition and learning platform. Do **not** use the skills learned here to attack systems without explicit authorization. Always practice in controlled lab environments and follow the event rules and responsible disclosure practices.

@@ -1,12 +1,11 @@
-# HackThisSite — Web Security Training Platform
+# HackThisSite Web Security Training Platform
 
 
 
-**Website:** https://www.hackthissite.org — a long‑running platform providing realistic and educational web security missions and exercises.
+**Website:** https://cryptohack.org a free platform focused on teaching cryptography through hands-on Capture The Flag (CTF) challenges.
 
 > ⚠️ **Legal & Ethical Notice**  
-> HackThisSite (HTS) exists to teach web security in a controlled, legal environment. Do **not** use techniques learned here to attack systems without explicit authorization. Always practice in isolated lab environments or on authorized test targets.
-
+> CryptoHack is an educational environment. Do not use the skills learned here to attack systems without explicit authorization. Always practice in controlled labs and follow responsible disclosure practices.
 ---
 
 ## Table of Contents
@@ -24,74 +23,71 @@
 ---
 
 ## Overview
-HackThisSite is an educational website offering a variety of security missions that simulate real‑world web application and system vulnerabilities. Its goal is to let students, hobbyists and security professionals practice attack and defence techniques in a safe environment.
-
-Missions are intentionally designed with learning objectives in mind — from very basic concepts to more realistic application scenarios.
+CryptoHack is an interactive platform for learning cryptography concepts through progressive, hands-on challenges. Suitable for beginners, it is also useful for more advanced learners who want to practice real-world crypto attacks in a safe environment.
 
 ---
 
 ## Core Features
-- **Categorized missions**: Basic, Realistic, and Application missions covering web, crypto, authentication, logic, and more.  
-- **Interactive exercises**: Web pages and challenge endpoints that users interact with to discover and exploit vulnerabilities.  
-- **Hints & feedback**: Many missions offer progressively revealing hints to help learners.  
-- **User accounts & progress tracking**: Register to save progress and submit mission flags.  
-- **Community writeups**: Users can publish writeups to explain their approaches (observe site rules on spoilers).  
-- **Educational focus**: Explanations and mission design emphasize learning over tool-driven abuse.
+- Step-by-step tutorials for beginners.
+- Interactive, hands-on cryptography challenges.
+- Guided learning paths and progressive difficulty.
+- Coverage of classical ciphers, modern crypto, RSA, hashing, and web crypto.
+- Built-in hints and explanations to support learning.
 
 ---
 
 ## Getting Started
-1. Visit https://www.hackthissite.org and create an account.  
-2. Start with **Basic** missions to learn fundamentals (XSS, SQLi, simple auth bypasses).  
-3. Use browser DevTools, HTTP intercepting proxies (Burp Suite, OWASP ZAP), and local tooling to inspect and interact with missions.  
-4. Move to **Realistic** and **Application** missions for complex scenarios resembling real web apps.  
-5. When stuck, consult hints and community writeups — but avoid posting spoilers without warnings.
+1. Visit https://cryptohack.org and create an account.
+2. Start with the learning paths or beginner tutorials.
+3. Explore categories such as classical ciphers, modern cryptography, RSA, and hashing.
+4. Recommended tools: Python 3, PyCryptodome/Crypto, hashlib, Jupyter Notebook, text editor, and basic command-line utilities.
+5. Progress at your own pace many challenges provide hints and explanations.
 
 ---
 
 ## Mission Types & Difficulty
-- **Basic** — Beginner friendly, teaches fundamentals and concepts.  
-- **Realistic** — Multi-step scenarios with more realistic app behavior and logic.  
-- **Application** — Focus on specific application-level flaws and exploitation techniques.  
-Difficulty scales within categories; read mission descriptions to pick an appropriate challenge.
+
+- **Classical Ciphers**: Caesar, Vigenère, substitution, and transposition ciphers.
+
+- **Modern Cryptography**: AES, block cipher modes, stream ciphers.
+
+- **RSA / Asymmetric Crypto**: Factorization, padding attacks, modular arithmetic.
+
+- **Hashing & Integrity**: Hash cracking, HMAC, collisions.
+
+- **Web Crypto**: Misuse of cryptography in web applications.
+
+- **Problems**: Number theory, logic problems, and fundamental cryptography concepts.
 
 ---
 
 ## Typical Workflow for Solving Missions
-- Reconnaissance: inspect pages, parameters, forms, cookies, endpoints.  
-- Attack surface mapping: enumerate inputs, functionality, and visible server behavior.  
-- Craft payloads: test and refine payloads (XSS, SQLi, LFI, etc.) in a controlled way.  
-- Verify and document: confirm the vulnerability, capture proof (flag), and write an explanation.  
-- Learn: read official hints and community writeups to understand alternative approaches.
+1. Read the challenge description carefully.
+2. Identify the cryptographic method or vulnerability.
+3. Apply appropriate tools (Python, hash libraries, or other utilities).
+4. Test your approach in a safe environment.
+5. Verify your solution and submit.
 
 ---
 
 ## Contributing & Writeups
-- **Contribute missions**: Some platforms accept user-submitted challenges; check HTS guidelines for submission rules.  
-- **Writeups**: When publishing a writeup, explain the reasoning, steps, and payloads — avoid posting full spoilers without a content warning.  
+- **Contribute missions**: Some platforms accept user-submitted challenges; check CryptoHack guidelines for submission rules.  
+- **Writeups**: When publishing a writeup, explain the reasoning, steps, and payloads avoid posting full spoilers without a content warning.  
 - **Code of conduct**: Be respectful in community discussions. Don’t share personal data or illegal instructions.
-
-Suggested repository workflow (if contributing code or content):
-1. Fork the repo → create a branch (`feat/new-mission`).  
-2. Add mission files, metadata, and documentation.  
-3. Include tests or verification steps.  
-4. Submit a Pull Request with clear instructions and risk notes.
 
 ---
 
 ## Security & Responsible Use
-- **Legal**: Only test on HTS or explicitly permitted labs. Unauthorized scanning/exploitation of third-party systems is illegal.  
-- **Safety**: Run tools and exploits from disposable VMs or containers. Create snapshots before risky testing.  
-- **Privacy**: Don’t upload or share sensitive personal data. Sanitize logs/screenshots before public posting.  
-- **Server operators**: Validate and sandbox user-supplied content, apply rate-limiting, scanning, and monitoring.
-
+- **Legal**: Interact only with CryptoHack-provided infrastructure and assets.
+- **Safety**: Do not reuse techniques on real systems without authorization. 
+- **Privacy**: Run code or tests in isolated environments (VMs/containers) when needed.
+- **Server operators**: Respect platform rules regarding solution sharing and spoilers.
 ---
 
 ## Useful Pages
-- Homepage: https://www.hackthissite.org  
-- Missions / categories: accessible via site navigation (Basic, Realistic, Application)  
-- Forums / Community: link available on the site (use forum to ask questions, observe spoiler rules)  
-- Resources: recommended tools — Burp Suite, OWASP ZAP, browser DevTools, netcat, Python
+- Main site: https://cryptohack.org
+- Dashboard / Challenges: accessible after login.
+- Tutorials & Learning Paths: linked from the main site.
 
 ---
 
@@ -100,11 +96,4 @@ Suggested repository workflow (if contributing code or content):
 - Community writeups and tutorials (respect site spoiler policies).  
 - Educational projects and resources such as OWASP and Web Security Academy for further reading.
 
----
 
-If you want, I can:
-- Produce a shorter GitHub-friendly README version.  
-- Add example tool commands and a “starter kit” (recommended tools and typical payload snippets).  
-- Generate a `CONTRIBUTING.md` or `CODE_OF_CONDUCT.md` tuned to this README.
-
-Which would you like next?
