@@ -31,12 +31,13 @@ This repository holds writeups and tooling from various challenge platforms and 
 
 ## Included Platforms
 
-- **OverTheWire** — Bandit, Narnia, etc.  
-- **HackThisSite** — Basic & Realistic missions  
-- **PicoCTF** — CTF challenge writeups  
-- **HackTheBox** — Resolved machines (recon → exploit → post-exploit)  
-- **Crackmes** — Binary analysis & reverse engineering  
-- **BOOKS** — Scripts, snippets and experiments learned from books
+- **OverTheWire** : Bandit, Narnia, etc.  
+- **HackThisSite**: Basic & Realistic missions  
+- **PicoCTF** : CTF challenge writeups  
+- **HackTheBox** : Resolved machines (recon → exploit → post-exploit)  
+- **Crackmes** : Binary analysis & reverse engineering  
+- **BOOKS** : Scripts, snippets and experiments learned from books
+- **CryptoHack** : Elliptic Curves, Modular Arithmetic, Symmetric/Asymmetric Cryptography
 
 ---
 
@@ -53,7 +54,7 @@ Each platform folder should include:
 ## Projects By area
 
 ### Reverse Engineering & Exploit Development
-- CrackMe challenges: [Crackmes folder](./Crackmes\Binary Analysis)  
+- CrackMe challenges: [Crackmes folder](./Crackmes/BinaryAnalysis)  
 - picoCTF binary challenges: [picoCTF](./PicoCTF/Cryptography)
 
 ### Web Application Pentesting
@@ -63,6 +64,8 @@ Each platform folder should include:
 ### Cloud Security
  
 - AWS / Cloud labs (learning modules): [folder link](./HTBCloudLabs)  
+
+### Cryptography 
 
 ### Hardware & IoT Security
 - Flipper Zero experiments: [Flipper folder](./Flipper)  

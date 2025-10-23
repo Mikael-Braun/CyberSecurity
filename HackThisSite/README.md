@@ -1,99 +1,99 @@
-# HackThisSite Web Security Training Platform
+# Hack This Site — README
 
+> **HackThisSite.org** — *A free, safe, and legal training ground to practice and expand ethical hacking skills.*
 
-
-**Website:** https://cryptohack.org a free platform focused on teaching cryptography through hands-on Capture The Flag (CTF) challenges.
-
-> ⚠️ **Legal & Ethical Notice**  
-> CryptoHack is an educational environment. Do not use the skills learned here to attack systems without explicit authorization. Always practice in controlled labs and follow responsible disclosure practices.
 ---
 
 ## Table of Contents
-
-- [Overview](#overview)  
-- [Core Features](#core-features)  
-- [Getting Started](#getting-started)  
-- [Mission Types & Difficulty](#mission-types--difficulty)  
-- [Typical Workflow for Solving Missions](#typical-workflow-for-solving-missions)  
-- [Contributing & Writeups](#contributing--writeups)  
-- [Security & Responsible Use](#security--responsible-use)  
-- [Useful Pages](#useful-pages)  
-- [Credits & References](#credits--references)
-
----
-
-## Overview
-CryptoHack is an interactive platform for learning cryptography concepts through progressive, hands-on challenges. Suitable for beginners, it is also useful for more advanced learners who want to practice real-world crypto attacks in a safe environment.
+- [Description](#description)
+- [Features / Highlights](#features--highlights)
+- [Site Structure (Mission Types)](#site-structure-mission-types)
+- [Quick Start](#quick-start)
+- [Example URLs / Navigation](#example-urls--navigation)
+- [Best Practices and Rules](#best-practices-and-rules)
+- [How to Contribute](#how-to-contribute)
+- [Donations / Support](#donations--support)
+- [License and Credits](#license-and-credits)
+- [Useful Resources](#useful-resources)
+- [FAQ / Quick Tips](#faq--quick-tips)
 
 ---
 
-## Core Features
-- Step-by-step tutorials for beginners.
-- Interactive, hands-on cryptography challenges.
-- Guided learning paths and progressive difficulty.
-- Coverage of classical ciphers, modern crypto, RSA, hashing, and web crypto.
-- Built-in hints and explanations to support learning.
+## Description
+Hack This Site (HTS) is an educational platform providing CTF-style challenges and missions designed to teach security, programming, and forensic analysis in a safe and legal environment. HTS has been online since the early 2000s and is maintained by a community of volunteers.
 
 ---
 
-## Getting Started
-1. Visit https://cryptohack.org and create an account.
-2. Start with the learning paths or beginner tutorials.
-3. Explore categories such as classical ciphers, modern cryptography, RSA, and hashing.
-4. Recommended tools: Python 3, PyCryptodome/Crypto, hashlib, Jupyter Notebook, text editor, and basic command-line utilities.
-5. Progress at your own pace many challenges provide hints and explanations.
+## Features / Highlights
+- Missions categorized by difficulty and type.
+- Educational content: articles, tutorials, and HackThisZine.
+- Active community: forums, IRC, and Discord channels.
+- Project submissions and bug reporting system.
 
 ---
 
-## Mission Types & Difficulty
+## Site Structure (Mission Types)
+The main categories of challenges offered on HTS include:
 
-- **Classical Ciphers**: Caesar, Vigenère, substitution, and transposition ciphers.
+- **Basic Missions** — Introductory challenges (simple HTML/JS, logic puzzles, form manipulation).  
+- **Realistic Missions** — Scenarios simulating real-world applications.  
+- **Application / Programming** — Exercises focusing on coding and software logic.  
+- **JavaScript Challenges** — Puzzles and exploration via JS.  
+- **Forensic** — File, image, or log analysis exercises.  
+- **Steganography** — Hide or discover messages in media files.  
+- **Extended Basic, IRC, and other community-driven categories**.
 
-- **Modern Cryptography**: AES, block cipher modes, stream ciphers.
-
-- **RSA / Asymmetric Crypto**: Factorization, padding attacks, modular arithmetic.
-
-- **Hashing & Integrity**: Hash cracking, HMAC, collisions.
-
-- **Web Crypto**: Misuse of cryptography in web applications.
-
-- **Problems**: Number theory, logic problems, and fundamental cryptography concepts.
-
----
-
-## Typical Workflow for Solving Missions
-1. Read the challenge description carefully.
-2. Identify the cryptographic method or vulnerability.
-3. Apply appropriate tools (Python, hash libraries, or other utilities).
-4. Test your approach in a safe environment.
-5. Verify your solution and submit.
+> Note: Some missions require an account to access or submit solutions.
 
 ---
 
-## Contributing & Writeups
-- **Contribute missions**: Some platforms accept user-submitted challenges; check CryptoHack guidelines for submission rules.  
-- **Writeups**: When publishing a writeup, explain the reasoning, steps, and payloads avoid posting full spoilers without a content warning.  
-- **Code of conduct**: Be respectful in community discussions. Don’t share personal data or illegal instructions.
+## Quick Start
+1. **Register / Login:** Create an account to participate, post in forums, and submit solutions.  
+2. **Select a Mission:** Browse missions by category (Basic, Realistic, Forensic, etc.).  
+3. **Read the Mission Brief:** Inspect HTML, requests, downloads, or embedded hints.  
+4. **Test Locally / Safely:** Use tools like browser devtools, curl, Burp Suite, or local editors—never attack third-party systems.  
+5. **Submit Solution:** Enter the flag/password/result in the mission submission form (login may be required).
 
 ---
 
-## Security & Responsible Use
-- **Legal**: Interact only with CryptoHack-provided infrastructure and assets.
-- **Safety**: Do not reuse techniques on real systems without authorization. 
-- **Privacy**: Run code or tests in isolated environments (VMs/containers) when needed.
-- **Server operators**: Respect platform rules regarding solution sharing and spoilers.
----
+## Example URLs / Navigation
+- Homepage: discovery of missions and news: `https://www.hackthissite.org/`  
+- Basic Missions: `https://www.hackthissite.org/missions/basic/`  
+- Realistic Missions: `https://www.hackthissite.org/missions/realistic/`  
+- Register: `https://www.hackthissite.org/register`  
 
-## Useful Pages
-- Main site: https://cryptohack.org
-- Dashboard / Challenges: accessible after login.
-- Tutorials & Learning Paths: linked from the main site.
+> Always use official site navigation; URLs may change over time.
 
 ---
 
-## Credits & References
-- HackThisSite official site: https://www.hackthissite.org  
-- Community writeups and tutorials (respect site spoiler policies).  
-- Educational projects and resources such as OWASP and Web Security Academy for further reading.
+## Best Practices and Rules
+- **Legality:** Practice only within HTS’s environment. Do not attack external systems.  
+- **Behavior:** Respect forums and community members; avoid posting spoilers without warning.  
+- **Responsible Disclosure:** Report bugs through HTS’s bug reporting system. Useful reports are appreciated and rewarded.
 
+---
 
+## How to Contribute
+- **Submit Articles / Tutorials:** Use the “Submit Article / Lecture / Useful Stuff” section on the site.  
+- **Report Bugs:** Use the official bug submission / security disclosure system.  
+- **Support the Site:** HTS is community-maintained and donations are encouraged.
+
+---
+
+## Donations / Support
+HTS runs on recurring costs. Donations help maintain servers and services. Use official donation links on the site.
+
+---
+
+## License and Credits
+- Content is maintained by the HTS community. Redistribution requires proper attribution and following HTS guidelines (see site footer and Terms of Use).  
+- Credits to the HTS staff and volunteers (staff list available on “Meet the Staff” section).
+
+---
+
+## Useful Resources
+- Official articles and tutorials on HTS (“Articles” section).  
+- Walkthroughs and videos on YouTube (Basic, Realistic, Forensic).  
+- GitHub repositories documenting solutions and mission notes.
+
+---
