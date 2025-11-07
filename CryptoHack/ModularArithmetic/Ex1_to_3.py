@@ -42,3 +42,5 @@ print("y =", y)
 # Menor dos dois
 smaller = min(x, y)
 print("The smaller number:", smaller)
+
+

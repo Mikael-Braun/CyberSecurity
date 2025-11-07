@@ -74,3 +74,14 @@ pip install pycryptodome gmpy2 sympy
  But we never get 14 so 14 is non-residue<br>
  For X= 11 we never get 11 so 11 is non-residue<br>
  For x= 6 we get 6 so 6 is the only quadratic residue<br>
+
+## 7.<br> ![alt text](image-8.png)<br>
+ ![alt text](image-9.png)<br>
+ Test each integer: the 6th integer is a quadratic residue<br>
+![alt text](image-10.png)<br>
+Then choose the larger root as the flag.
+
+## 8. 
+- This problem falls into the p= 3 mod 4 case
+- ![alt text](image-11.png)
+- Now we choose the smallest

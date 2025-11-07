@@ -46,33 +46,33 @@ This repository holds writeups and tooling from various challenge platforms and 
 Each platform folder should include:
 - `README.md` (local index / summary)  
 - writeups in `.md` format or notes
-- `scripts/` for exploits or helper utilities 
+- optional `scripts/` for exploits or helper utilities 
 - optional `screenshots/` or `captures/` for images
 
 ---
 
 ## Projects By area
 
+### Reverse Engineering
+- [Crackmes challenges](./Crackmes/BinaryAnalysis/)  
 
-
-### Reverse Engineering & Exploit Development
-- CrackMe challenges: [Crackmes folder](./Crackmes/BinaryAnalysis)  
-- picoCTF binary challenges: [picoCTF](./PicoCTF/Cryptography)
 
 ### Web Application Pentesting  
-- picoCTF web challenges: [picoCTF folder](./PicoCTF/WebExploitation)  
+- [picoCTF web challenges](./PicoCTF/WebExploitation/)  
+- [HackThisSite Basic](./HackThisSite/Challenges/Basic/)  
 
 ### Cloud Security
  
-- AWS / Cloud labs (learning modules): [folder link](./HTBCloudLabs)  
+- [BreachInTheCloud](./BreachInTheCloud/Red%20Team%20Cloud/)  
 
 ### Cryptography 
-
+- [picoCTF Cryptography](./PicoCTF/Cryptography/)
+- [CryptoHack](./PicoCTF/Cryptography/)
 ### Hardware & IoT Security
-- Flipper Zero experiments: [Flipper folder](./Flipper)  
-- Raspberry Pi lab projects: [RaspberryPi folder](./RaspberryPi)
+- [Flipper folder](./Flipper/)  
+- [RaspberryPi folder](./RaspberryPi/)
 
-
+### Forensics
 
 
 
