@@ -3,8 +3,8 @@ title: "Modular Arithmetics — CryptoHack Writeup"
 author: "your_nick"
 date: 2025-11-02
 platform: "CryptoHack"
-category: "Category (e.g. RSA, Stream Cipher, Classical)"
-difficulty: "easy-to-advanced"
+category: "Category (Modular Arithmetics)"
+difficulty: "easy"
 points: 50
 
 ---
@@ -64,4 +64,13 @@ pip install pycryptodome gmpy2 sympy
 
 **Therefore the result is`` 9 ``**
 
-## 6. 
+## 6.  
+- Modulo p = 29
+- ints = [14,6,11]
+
+![alt text](image-6.png) <br>
+ We have to check if :<br>
+ ![alt text](image-7.png)<br>
+ But we never get 14 so 14 is non-residue<br>
+ For X= 11 we never get 11 so 11 is non-residue<br>
+ For x= 6 we get 6 so 6 is the only quadratic residue<br>
