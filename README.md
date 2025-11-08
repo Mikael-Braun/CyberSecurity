@@ -23,7 +23,7 @@
 This repository holds writeups and tooling from various challenge platforms and learning resources. It’s organized for easy browsing and reproducible practice, always run everything in isolated environments (VMs / Docker).
 
 **Goals**
-- Document every step that was taken  
+- Document every step that was taken (Proof-of-concept )
 - Provide reusable scripts and templates.  
 - Encourage reproducible learning and ethical hacking practice.
 
@@ -36,8 +36,9 @@ This repository holds writeups and tooling from various challenge platforms and 
 - **PicoCTF** : CTF challenge writeups  
 - **HackTheBox** : Resolved machines 
 - **Crackmes** : Binary analysis & reverse engineering  
-- **BOOKS** : Scripts, snippets and experiments learned from books
 - **CryptoHack** : Elliptic Curves, Modular Arithmetic, Symmetric/Asymmetric Cryptography
+- **BreachInTheCloud** : Cloud Security(Red Team)
+- **BOOKS** : Scripts, snippets and experiments learned from books
 
 ---
 
@@ -69,11 +70,11 @@ Each platform folder should include:
 - [picoCTF Cryptography](./PicoCTF/Cryptography/)
 - [CryptoHack](./PicoCTF/Cryptography/)
 ### Hardware & IoT Security
-- [Flipper folder](./Flipper/)  
-- [RaspberryPi folder](./RaspberryPi/)
+<!-- - [Flipper folder](./Flipper/)  
+- [RaspberryPi folder](./RaspberryPi/)-->
 
 ### Forensics
-
+<!-- - [picoCTF Forensics](./PicoCTF/Forensic/)-->
 
 
 ---
