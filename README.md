@@ -52,7 +52,7 @@ Each platform folder should include:
 
 ---
 
-## Projects By area
+## ☣︎ Projects By area ☣︎
 
 ### Reverse Engineering
 - [Crackmes challenges](./Crackmes/BinaryAnalysis/)  
@@ -69,6 +69,7 @@ Each platform folder should include:
 ### Cryptography 
 - [picoCTF Cryptography](./PicoCTF/Cryptography/)
 - [CryptoHack](./PicoCTF/Cryptography/)
+
 ### Hardware & IoT Security
 <!-- - [Flipper folder](./Flipper/)  
 - [RaspberryPi folder](./RaspberryPi/)-->
