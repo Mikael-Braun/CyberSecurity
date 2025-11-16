@@ -54,13 +54,12 @@ Each platform folder should include:
 
 ## ☣︎ Projects By area ☣︎
 
+### Web Application Pentesting  
+- [HackThisSite Basic](./HackThisSite/Challenges/Basic/)    
+- [picoCTF web challenges](./PicoCTF/WebExploitation/)
+
 ### Reverse Engineering
 - [Crackmes challenges](./Crackmes/BinaryAnalysis/)  
-
-
-### Web Application Pentesting  
-- [picoCTF web challenges](./PicoCTF/WebExploitation/)  
-- [HackThisSite Basic](./HackThisSite/Challenges/Basic/)  
 
 ### Cloud Security
  
