@@ -1,4 +1,4 @@
-# 🚀 Web Exploitation Log Hunt picoCTF  
+# 🚀 General Skills Log Hunt picoCTF  
 **Source:** picoCTF  
 **Category:** General Skills  
 **Difficulty:** Easy  
