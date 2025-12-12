@@ -37,11 +37,11 @@ picoCTF is a free, annual CTF and an always-available practice platform designed
 
 ## Types of Challenges
 - **Forensics:** Extracting data from files, images, or network captures.  
-- **Web:** Finding and exploiting common web vulnerabilities.  
-- **Crypto:** Basic cryptography concepts and breaking weak schemes.  
+- **Web Exploitation:** Finding and exploiting common web vulnerabilities.  
+- **Cryptography:** Basic cryptography concepts and breaking weak schemes.  
 - **Reverse Engineering:** Analyzing binaries to extract secrets or logic.  
-- **Binary / Pwn:** Low-level exploitation (memory corruption, format strings) — typically more advanced.  
-- **Misc/Trivia:** Logic puzzles, OSINT, or knowledge-based tasks.
+- **Binary Exploitation:** Low-level exploitation (memory corruption, format strings) — typically more advanced.  
+- **General Skills:** Logic puzzles, OSINT, or knowledge-based tasks.
 
 ---
 
