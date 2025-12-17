@@ -1,6 +1,6 @@
 # picoCTF Cybersecurity CTF
 
-**Website:** https://picoctf.org — a free, beginner-focused cybersecurity Capture The Flag (CTF) platform and learning environment created by Carnegie Mellon University for students and newcomers to computer security.
+**Website:** https://picoctf.org a free, beginner-focused cybersecurity Capture The Flag (CTF) platform and learning environment created by Carnegie Mellon University for students and newcomers to computer security.
 
 > ⚠️ **Legal & Ethical Notice**  
 > picoCTF is an educational competition and learning platform. Do **not** use the skills learned here to attack systems without explicit authorization. Always practice in controlled lab environments and follow the event rules and responsible disclosure practices.
@@ -31,7 +31,7 @@ picoCTF is a free, annual CTF and an always-available practice platform designed
 2. Explore beginner tracks and tutorials if you are new to cybersecurity.  
 3. Start with basic categories (forensics, web, cryptography, reversing, binary exploitation, pwn, misc).  
 4. Use common tools: browser DevTools, `strings`, `file`, `gdb`/`radare2`, `binwalk`, `curl`, `netcat`, Python, and text-processing utilities.  
-5. Work through challenges at your own pace — many include hints and progressive scoring.
+5. Work through challenges at your own pace, many include hints and progressive scoring.
 
 ---
 
@@ -40,7 +40,7 @@ picoCTF is a free, annual CTF and an always-available practice platform designed
 - **Web Exploitation:** Finding and exploiting common web vulnerabilities.  
 - **Cryptography:** Basic cryptography concepts and breaking weak schemes.  
 - **Reverse Engineering:** Analyzing binaries to extract secrets or logic.  
-- **Binary Exploitation:** Low-level exploitation (memory corruption, format strings) — typically more advanced.  
+- **Binary Exploitation:** Low-level exploitation (memory corruption, format strings), typically more advanced.  
 - **General Skills:** Logic puzzles, OSINT, or knowledge-based tasks.
 
 ---
@@ -48,7 +48,7 @@ picoCTF is a free, annual CTF and an always-available practice platform designed
 ## Learning Resources & Tools
 - picoCTF provides tutorials and a learning portal for new participants.  
 - Recommended beginner tools: a Linux VM, Python 3, Wireshark, Ghidra (or radare2), Binary Ninja (if available), and basic command-line utilities.  
-- Community writeups (after attempting a challenge) and official tutorials are valuable for learning — follow spoiler etiquette.
+- Community writeups (after attempting a challenge) and official tutorials are valuable for learning, follow spoiler etiquette.
 
 ---
 
@@ -84,7 +84,4 @@ picoCTF is a free, annual CTF and an always-available practice platform designed
 
 ## Credits & References
 - picoCTF: Carnegie Mellon University (platform and contest organizers).  
-- Educational materials and community writeups — follow platform sharing rules and credit sources where appropriate.
-
-
-
+- Educational materials and community writeups, follow platform sharing rules and credit sources where appropriate.
