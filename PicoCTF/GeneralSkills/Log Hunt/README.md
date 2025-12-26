@@ -45,8 +45,7 @@ Locate the **flag** hidden somewhere inside the logs.
 ![alt text](image.png)
 3. Search for the flag<br>
 ![alt text](image-1.png)
-4. Arrange the fragments in order to have the complete flag<br>
-![alt text](image-2.png)
+4.The flag was successfully retrieved.  
 
 </details>
 
