@@ -20,7 +20,7 @@
 
 ## Overview
 
-This repository holds writeups and tooling from various challenge platforms and learning resources. It’s organized for easy browsing and reproducible practice, always run everything in isolated environments (VMs / Docker).
+This repository holds writeups and tooling from various challenge platforms and learning resources. It’s organized for easy browsing and reproducible practice, always run everything in isolated environments (VMs / Docker). Some files don't have the exact writeup because of the policies of some websites  
 
 **Goals**
 - Document every step that was taken (Proof-of-concept )
