@@ -25,12 +25,8 @@ You are provided with an image file `numbers.png` that contains a sequence of nu
 
 ## ▶️ Quick steps / Approach
 1. Open `numbers.png` and extract the numbers. 
-2. Convert each number to its corresponding lowercase letter:  
-   - `1 → a, 2 → b, …, 26 → z`  
-4. Concatenate the characters to form the hidden message or flag.  
-5. Submit the flag in the format `PICOCTF{...}`.
-
-
+2. Convert each number  
+3. Submit the flag in the format `PICOCTF{...}`.
 
 ---
 
@@ -38,8 +34,7 @@ You are provided with an image file `numbers.png` that contains a sequence of nu
 <details>
 <summary>Solution </summary>
 
-PICOCTF{thenumbersmason}
-
+- Convert each number to its corresponding lowercase letter
 
 </details>
 

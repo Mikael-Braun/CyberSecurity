@@ -24,19 +24,15 @@ You are given the following ciphertext:  cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}
 ---
 
 ## ▶️ Quick steps / Approach
-1. Open CyberChef (or any ROT13 tool).  
-2. Paste the ciphertext into the input panel.  
-3. Add the **ROT13** operation.  
-4. The output will reveal the plaintext / flag.  
-
+1. Use CyberChef (or any ROT13 tool).  
 
 ---
 
 ## 🧭 Solution (SPOILER)
 <details>
 <summary>Solution</summary>
+ROT13
 
-picoCTF{not_too_bad_of_a_problem}
 </details>
 
 

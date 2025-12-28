@@ -23,20 +23,19 @@ You were given the file content: YidkM0JxZGtwQlRYdHFhR3g2YUhsZmF6TnFlVGwzWVROclh
 ---
 
 ## ▶️ Quick steps / Approach
-1. Base64-decode the provided string → you get another Base64-looking payload.  
-2. Base64-decode the inner payload → you get the ASCII string `wpjvJAM{jhlzhy_k3jy9wa3k_86kl32k2}`.  
-3. Apply a Caesar shift of **-7** (i.e., shift letters 7 positions backward) to the whole string (letters only, preserve digits/punctuation).  
+1. decode the provided string 
+2. Base64-decode the inner payload  
+3. Apply a Caesar shift
 4. The result is the readable flag.
 
-*(All steps can be done quickly in CyberChef by chaining operations: `From Base64` → `From Base64` → `Caesar` with shift `-7`.)*
 
 ---
 
 ## 🧭 Solution (SPOILER)
 <details>
 <summary>Solution </summary>
-
-picoCTF{caesar_d3cr9pt3d_86de32d2}
+- Base64
+- Caesar shift-7
 </details>
 
 ## ❌ Common mistakes

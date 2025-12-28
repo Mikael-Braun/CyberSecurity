@@ -23,11 +23,8 @@ Given the ciphertext `cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_Ncualgvd}` an
 ---
 
 ## ▶️ Quick steps / Approach
-1. Open CyberChef.  
-2. Paste the ciphertext into the input panel.  
-3. From the operations list, add **ROT13** (or search for “ROT13”).  
-4. CyberChef will apply ROT13 and display the decoded text in the output panel.  
-*(Alternative: run a short Python script using `codecs.decode(s, 'rot_13')`.)*
+1. Use CyberChef to decode.  
+2. Paste the ciphertext into the input panel.
 
 ---
 
@@ -35,8 +32,7 @@ Given the ciphertext `cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_Ncualgvd}` an
 <details>
 <summary>Solution (step-by-step)</summary>
 
-1. Ciphertext:  cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_Ncualgvd}
-2.  Applying **ROT13** (CyberChef → ROT13) yields: picoCTF{next_time_I'll_try_2_rounds_of_rot13_Aphnytiq}
+- ROT13 
 </details>
 
 ## ❌ Common mistakes

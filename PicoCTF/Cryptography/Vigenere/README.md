@@ -24,10 +24,8 @@ You are given an encrypted message and the key `"CYLAB"`. The task is to use the
 
 ## ▶️ Quick steps / Approach
 1. Copy the encrypted message from the file.  
-2. Open CyberChef.  
-3. Use the **“Vigenère Decrypt”** operation.  
-4. Input the key `"CYLAB"`.  
-5. CyberChef will decrypt the message and reveal the plaintext / flag. 
+2. Use CyberChef to decrypt it.  
+3. CyberChef will decrypt the message and reveal the plaintext / flag. 
 
 ---
 
@@ -35,7 +33,9 @@ You are given an encrypted message and the key `"CYLAB"`. The task is to use the
 <details>
 <summary>Solution</summary>
 
-picoCTF{D0NT_US3_V1G3N3R3_C1PH3R_ae82272q}
+- Vigenère Decrypt
+- CYLAB
+
 </details>
 
 
