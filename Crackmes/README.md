@@ -1,4 +1,4 @@
-# crackmes.one — Reverse-Engineering Platform
+# crackmes.one Reverse-Engineering Platform
 
 
 
@@ -19,7 +19,6 @@
 - [Submissions](#submissions)
 - [Security Recommendations for Users and Operators](#security-recommendations-for-users-and-operators)
 - [History](#history)
-
 
 ---
 ## Overview
