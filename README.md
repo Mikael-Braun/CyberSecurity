@@ -9,12 +9,11 @@
 
 - [Overview](#overview)  
 - [Included Platforms](#included-platforms)  
-- [Repository Structure](#repository-structure)    
+- [Repository Structure](#repository-structure)  
 - [Projects By area ](#Projects-By-area)
 - [Ethics & Legal Notice](#ethics--legal-notice)  
 - [Security Recommendations](#security-recommendations)
 - [License](#license)  
-
 
 ---
 
@@ -23,6 +22,7 @@
 This repository holds writeups and tooling from various challenge platforms and learning resources. It’s organized for easy browsing and reproducible practice, always run everything in isolated environments (VMs / Docker). Some files don't have the exact writeup because of the policies of some websites  
 
 **Goals**
+
 - Document every step that was taken (Proof-of-concept )
 - Provide reusable scripts and templates.  
 - Encourage reproducible learning and ethical hacking practice.
@@ -47,6 +47,7 @@ This repository holds writeups and tooling from various challenge platforms and 
 ## Repository Structure
 
 Each platform folder should include:
+
 - `README.md` (local index / summary)  
 - writeups in `.md` format or notes
 - optional `scripts/` for exploits or helper utilities 
@@ -57,19 +58,24 @@ Each platform folder should include:
 ## ☣︎ Projects By area ☣︎
 
 ### Pentesting / Red Teaming
-- [Mercury](./Vulnhub/Mercury/)
+
+- [Vulnhub](./Vulnhub/)
 
 ### Web Application Pentesting  
+
 - [HackThisSite Basic](./HackThisSite/Challenges/Basic/)    
 - [picoCTF web challenges](./PicoCTF/WebExploitation/)
 
 ### Reverse Engineering
+
 - [Crackmes challenges](./Crackmes/BinaryAnalysis/)  
 
 ### Cloud Security
+
 - [BreachInTheCloud](./BreachInTheCloud/Red%20Team%20Cloud/)  
 
 ### Cryptography 
+
 - [picoCTF Cryptography](./PicoCTF/Cryptography/)
 - [CryptoHack](./PicoCTF/Cryptography/)
 
