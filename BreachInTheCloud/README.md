@@ -1,9 +1,9 @@
-# Breach In The Cloud — Cloud Security & Breach Repository
+# pwnedlabs — Cloud Security
 
-**Website:** https://breachinthecloud.com — a public platform documenting cloud security breaches, research, and incident analyses.
+**Website:** https://pwnedlabs.io/ — a public platform documenting cloud security breaches, research, and incident analyses.
 
 > ⚠️ **Legal & Ethical Notice**  
-> Breach In The Cloud provides educational resources and information about publicly disclosed cloud security incidents. Do **not** attempt unauthorized access or exploitation of systems. Always practice in controlled lab environments or with explicit authorization.
+> pwnedlabs provides educational resources and information about publicly disclosed cloud security incidents. Do **not** attempt unauthorized access or exploitation of systems. Always practice in controlled lab environments or with explicit authorization.
 
 ---
 
@@ -21,7 +21,7 @@
 ---
 
 ## Overview
-Breach In The Cloud is a public platform where researchers and security enthusiasts document cloud security breaches, incidents, and case studies.  
+pwnedlabs is a public platform where researchers and security enthusiasts document cloud security breaches, incidents, and case studies.  
 The homepage provides counters of incidents, contributors, and useful links to analyses, guides, and community channels.
 
 ---
@@ -50,7 +50,7 @@ The homepage provides counters of incidents, contributors, and useful links to a
 
 ## Known Open-Source Implementation (Stack)
 
-A public contribution on GitHub (example: `securitycommunity/breachinthecloud`) is referenced for running a local instance. Typical stack includes:  
+A public contribution on GitHub (example: `securitycommunity/pwnedlabs`) is referenced for running a local instance. Typical stack includes:  
 
 - **Backend:** Python (Django/Flask)  
 - **Database:** PostgreSQL / MongoDB  
