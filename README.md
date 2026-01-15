@@ -59,7 +59,7 @@ Each platform folder should include:
 
 ### Pentesting / Red Teaming
 
-- [Vulnhub](./Vulnhub/)
+- [Vulnhub](./VulnHub/)
 
 ### Web Application Pentesting  
 
