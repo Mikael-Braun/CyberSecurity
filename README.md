@@ -34,11 +34,13 @@ This repository holds writeups and tooling from various challenge platforms and 
 - **OverTheWire** : Bandit, Narnia, etc.  
 - **HackThisSite**: Basic & Realistic missions  
 - **PicoCTF** : CTF challenge writeups  
-- **HackTheBox** : Resolved machines 
-- **Crackmes** : Binary analysis & reverse engineering  
+- **HackTheBox** : Resolved machines
+- **Crackmes** : Binary analysis & Reverse engineering  
 - **CryptoHack** : Elliptic Curves, Modular Arithmetic, Symmetric/Asymmetric Cryptography
-- **BreachInTheCloud** : Cloud Security(Red Team)
+- **BreachInTheCloud** : Cloud Security (Red Team)
+- **Vulnhub** : Virtual machines
 - **BOOKS** : Scripts, snippets and experiments learned from books
+- **Unique Projects**: Scanner, Ransomeware
 
 ---
 
@@ -54,6 +56,9 @@ Each platform folder should include:
 
 ## ☣︎ Projects By area ☣︎
 
+### Pentesting / Red Teaming
+- [Mercury](./Vulnhub/Mercury/)
+
 ### Web Application Pentesting  
 - [HackThisSite Basic](./HackThisSite/Challenges/Basic/)    
 - [picoCTF web challenges](./PicoCTF/WebExploitation/)
@@ -62,20 +67,19 @@ Each platform folder should include:
 - [Crackmes challenges](./Crackmes/BinaryAnalysis/)  
 
 ### Cloud Security
- 
 - [BreachInTheCloud](./BreachInTheCloud/Red%20Team%20Cloud/)  
 
 ### Cryptography 
 - [picoCTF Cryptography](./PicoCTF/Cryptography/)
 - [CryptoHack](./PicoCTF/Cryptography/)
 
+<!-- - 
 ### Hardware & IoT Security
-<!-- - [Flipper folder](./Flipper/)  
+[Flipper folder](./Flipper/)  
 - [RaspberryPi folder](./RaspberryPi/)-->
-
+<!-- -
 ### Forensics
-<!-- - [picoCTF Forensics](./PicoCTF/Forensic/)-->
-
+ [picoCTF Forensics](./PicoCTF/Forensic/)-->
 
 ---
 ## Ethics & Legal Notice
