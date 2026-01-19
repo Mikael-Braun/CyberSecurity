@@ -1,4 +1,4 @@
-# 🚀 AWS S3 Enumeration Basics — Breach in the cloud
+# 🚀 AWS S3 Enumeration Basics — pwnedlabs
 
 ![level](https://img.shields.io/badge/level-Easy-brightgreen) ![platform](https://img.shields.io/badge/platform-Linux-blue) ![arch](https://img.shields.io/badge/arch-x86__64-orange) ![lang](https://img.shields.io/badge/lang-Bash-lightgrey) ![tool](https://img.shields.io/badge/tool-AWS-orange)
 
