@@ -21,7 +21,7 @@
 
 This repository holds writeups and tooling from various challenge platforms and learning resources. It’s organized for easy browsing and reproducible practice, always run everything in isolated environments (VMs / Docker). Some files don't have the exact writeup because of the policies of some websites  
 
-**Goals**
+**Goals**  
 
 - Document every step that was taken (Proof-of-concept )
 - Provide reusable scripts and templates.  
@@ -29,18 +29,14 @@ This repository holds writeups and tooling from various challenge platforms and 
 
 ---
 
-## Included Platforms
+## Included Platforms  
 
-- **OverTheWire** : Bandit, Narnia, etc.  
 - **HackThisSite**: Basic & Realistic missions  
 - **PicoCTF** : CTF challenge writeups  
-- **HackTheBox** : Resolved machines
 - **Crackmes** : Binary analysis & Reverse engineering  
 - **CryptoHack** : Elliptic Curves, Modular Arithmetic, Symmetric/Asymmetric Cryptography
 - **BreachInTheCloud** : Cloud Security (Red Team)
 - **Vulnhub** : Virtual machines
-- **BOOKS** : Scripts, snippets and experiments learned from books
-- **Unique Projects**: Scanner, Ransomeware
 
 ---
 
@@ -63,7 +59,7 @@ Each platform folder should include:
 
 ### Web Application Pentesting  
 
-- [HackThisSite Basic](./HackThisSite/Challenges/Basic/)    
+- [HackThisSite Basic](./HackThisSite/Challenges/Basic/)  
 - [picoCTF web challenges](./PicoCTF/WebExploitation/)
 
 ### Reverse Engineering
@@ -74,18 +70,10 @@ Each platform folder should include:
 
 - [BreachInTheCloud](./BreachInTheCloud/Red%20Team%20Cloud/)  
 
-### Cryptography 
+### Cryptography  
 
 - [picoCTF Cryptography](./PicoCTF/Cryptography/)
 - [CryptoHack](./PicoCTF/Cryptography/)
-
-<!-- - 
-### Hardware & IoT Security
-[Flipper folder](./Flipper/)  
-- [RaspberryPi folder](./RaspberryPi/)-->
-<!-- -
-### Forensics
- [picoCTF Forensics](./PicoCTF/Forensic/)-->
 
 ---
 ## Ethics & Legal Notice
