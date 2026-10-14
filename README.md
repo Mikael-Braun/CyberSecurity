@@ -60,7 +60,7 @@ Each platform folder should include:
 ### Web Application Pentesting  
 
 - [HackThisSite Basic](./HackThisSite/Challenges/Basic/)  
-- [picoCTF web challenges](./PicoCTF/WebExploitation/)
+- [CyLab web challenges](./CyLab/WebExploitation/)
 
 ### Reverse Engineering
 
@@ -72,10 +72,11 @@ Each platform folder should include:
 
 ### Cryptography  
 
-- [picoCTF Cryptography](./PicoCTF/Cryptography/)
-- [CryptoHack](./PicoCTF/Cryptography/)
+- [CyLab Cryptography](./CyLab/Cryptography/)
+- [CryptoHack](./CryptoHack/Cryptography/)
 
 ---
+
 ## Ethics & Legal Notice
 
 This repository is for educational purposes only.
