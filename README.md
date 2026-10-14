@@ -1,6 +1,6 @@
-# 🔥 Ethical Hacking Writeups & Learning Lab
+# Ethical Hacking Writeups & Cybersecurity
 
-> A curated collection of writeups, scripts and notes about offensive security, CTFs and reverse engineering.  
+> A curated collection of writeups, scripts and notes about offensive/defensive security, CTFs and reverse engineering.  
 > Focused on reproducibility, clear documentation and responsible learning.
 
 ---
@@ -10,7 +10,7 @@
 - [Overview](#overview)  
 - [Included Platforms](#included-platforms)  
 - [Repository Structure](#repository-structure)  
-- [Projects By area ](#Projects-By-area)
+- [Projects By area](#projects-by-area)
 - [Ethics & Legal Notice](#ethics--legal-notice)  
 - [Security Recommendations](#security-recommendations)
 - [License](#license)  
@@ -51,7 +51,7 @@ Each platform folder should include:
 
 ---
 
-## ☣︎ Projects By area ☣︎
+## Projects by area
 
 ### Pentesting / Red Teaming
 
