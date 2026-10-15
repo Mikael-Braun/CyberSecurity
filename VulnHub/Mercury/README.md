@@ -71,7 +71,7 @@ We can see that the port 8080 is open with the service HTTP so there could be a 
 
 We access the web service: ``http://192.168.239.5:8080/``<br>
 ![alt text](image-4.png)<br>
-There could be hiden directories or files<br>
+There could be hidden directories or files<br>
 We will use ffuf to find hidden directories or files:``ffuf -u "http://192.168.239.5:8080/FUZZ" -w /usr/share/wordlists/dirb/common.txt -t 50``<br>
 ![alt text](image-5.png)<br>
 We found ``robots.txt``<br>
@@ -138,7 +138,7 @@ It will open the ``check_syslog.sh`` in the vi editor<br>
 ![alt text](image-27.png)<br>  
 In the vi editor we have to execute this line to have a shell: ``:!/bin/bash``<br>
 
-Finally we change directory to the root: ``cd /root`<br>
+Finally we change directory to the root: `cd /root`<br>
 ![alt text](image-28.png)<br>
 
 ### 🏁 Objectives & Flags
